@@ -10,6 +10,10 @@
     align-items: center;
     
 }
+.contenedorCard:hover{
+    scale: 1.05;
+    
+}
 .tituloCard{
     
     height: 3rem;
