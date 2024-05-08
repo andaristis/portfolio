@@ -1,0 +1,15 @@
+.cardContacto{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.logoContacto{
+    width: 4rem;
+}
+.contenedorLogosContactos{
+    height: 80%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

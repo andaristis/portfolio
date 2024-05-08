@@ -1,0 +1,23 @@
+.contactos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorLogosContactos{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 18px solid var(--color-naranja);
+    
+}
+.contenedorFormContactos{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 20px solid var(--color-negro-azul);
+    column-gap: 1rem;
+}

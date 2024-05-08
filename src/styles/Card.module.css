@@ -1,0 +1,46 @@
+
+.contenedorCard{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-azul-oscuro);
+    border-radius: 2rem;
+    padding: 2rem;
+    align-items: center;
+    
+}
+.tituloCard{
+    
+    height: 3rem;
+    margin-bottom:1rem;
+}
+
+.preview{
+    width: 100%;
+    height: auto;
+    border: white solid .2rem;
+    margin-bottom:1rem;
+}
+.subtituloCard{
+    margin-bottom: .5rem;
+}
+.descripcionCard, .subtituloCard{
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.contenedorHabilidadesCard{
+    list-style: none;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    margin-top: auto;
+   
+}
+.habilidadCard{
+    width: 2rem;
+    opacity: 50%;
+    margin: 0 0.5rem
+    
+}

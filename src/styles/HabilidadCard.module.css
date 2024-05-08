@@ -1,0 +1,24 @@
+.cardHabilidad{
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-naranja);
+    border-radius: 1rem;
+    padding: .5rem;
+    gap: 0.5rem;
+}
+.logoHabilidad{
+    width: 2rem;
+}
+.tituloHabilidad{
+    display: block;
+    text-align: center; 
+    writing-mode: vertical-rl;
+    font-size: 1rem;
+   
+
+}
+.descripcionHabilidad{
+    font-size: .8rem;
+    font-weight: 600;
+}
