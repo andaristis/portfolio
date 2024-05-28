@@ -14,11 +14,14 @@
     display: block;
     text-align: center; 
     writing-mode: vertical-rl;
-    font-size: 1rem;
+    font-size: .7rem;
    
 
 }
 .descripcionHabilidad{
-    font-size: .8rem;
+    font-size: .7rem;
     font-weight: 600;
+}
+@media (max-w) {
+    
 }

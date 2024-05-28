@@ -1,12 +1,17 @@
 import React from 'react'
 import styles from '../styles/Inicio.module.css';
 import Biblioteca from '../componentes/Biblioteca';
+import useScrollbarWidth from '../hooksPersonalizados/useScrollbarWidth';
 
 const Inicio = ({ inicioRef }) => {
   const {images} = Biblioteca()
+  const scrollbarWidth = useScrollbarWidth();
+
+  const sectionStyle = {
+    width: `calc(100vw - 3vw - ${scrollbarWidth}px)`}
  
   return (
-    <section ref={inicioRef} className={styles.inicio}>
+    <section ref={inicioRef} className={styles.inicio} style={sectionStyle}>
      
       <div id={styles.contenedorImagenInicio}>
         <img src={images.fondo_inicio} alt="" />

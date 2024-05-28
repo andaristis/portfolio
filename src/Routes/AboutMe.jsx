@@ -1,11 +1,16 @@
 import React from 'react'
 import styles from '../styles/AboutMe.module.css'
 import Biblioteca from '../componentes/Biblioteca';
+import useScrollbarWidth from '../hooksPersonalizados/useScrollbarWidth';
 
 const AboutMe = ({aboutMeRef}) => {
     const {images} = Biblioteca()
+    const scrollbarWidth = useScrollbarWidth();
+
+  const sectionStyle = {
+    width: `calc(100vw - 3vw - ${scrollbarWidth}px)`}
   return (
-    <section ref={aboutMeRef} className={styles.aboutMe}>
+    <section ref={aboutMeRef} className={styles.aboutMe} style={sectionStyle}>
         <div className={styles.contenedorImgAboutMe}>
             <img className={styles.fotoPersonal}src={images.foto_personal} alt="Andaristis" />
         </div>

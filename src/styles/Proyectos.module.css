@@ -1,7 +1,7 @@
 
 .contenedorProyectos{
     background-color: var(--color-negro-azul);
-    width: calc(97vw - 15px);;
+    width: calc(100vw - 3vw);
     height: 100vh;
     display: flex;
     justify-content:space-around;

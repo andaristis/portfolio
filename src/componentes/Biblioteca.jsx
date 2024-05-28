@@ -147,7 +147,7 @@ const Biblioteca = () => {
             {id: 9,
             titulo: "COREL DRAW",
             logo_habilidad: logoCorelAzul,
-            descripcion: "Manipulación del DOM, desarrollo de aplicaciones web interactivas y dinámicas. Familiarizado con conceptos fundamentales de JavaScript,  variables, operadores, estructuras de control y funciones.",
+            descripcion: "Utilizo las herramientas avanzadas de CorelDRAW para crear logotipos, recursos gráficos para mis proyectos. Estoy familiarizado con la de edición de imágenes y la manipulación de vectores.",
             },
             {id: 10,
             titulo: "TRELLO",

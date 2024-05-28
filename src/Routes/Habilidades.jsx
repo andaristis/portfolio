@@ -3,13 +3,19 @@ import styles from '../styles/Habilidades.module.css'
 import CardHabilidad from '../componentes/CardHabilidad';
 import Biblioteca from '../componentes/Biblioteca';
 import Competencia from '../componentes/Competencia';
+import useScrollbarWidth from '../hooksPersonalizados/useScrollbarWidth';
 
 
 const Habilidades = ({habilidadesRef}) => {
   const {habilidades, images} = Biblioteca()
+  const scrollbarWidth = useScrollbarWidth();
 
+  const sectionStyle = {
+    width: `calc(100vw - 3vw - ${scrollbarWidth}px)`}
+    console.log(sectionStyle);
+    console.log("sectionStyle");
   return (
-    <section ref={habilidadesRef} className={styles.habilidades}>
+    <section ref={habilidadesRef} className={styles.habilidades} style={sectionStyle}>
       <h2 className={styles.tituloHabilidades}>HABILIDADES PRINCIPALES</h2>
       <div className={styles.contenedorHabilidades}>
         {habilidades.map((habilidad) =>
