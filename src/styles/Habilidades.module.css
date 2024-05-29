@@ -1,9 +1,9 @@
 .contenedorHabilidades{
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas de tamaño flexible */
+    grid-template-columns: repeat(4, 1fr); /* 3 columnas de tamaño flexible */
     grid-gap: 20px;
     margin: 0 1rem; 
-    grid-auto-rows: 7rem;
+    grid-auto-rows: 5rem;
 }
 .habilidades{
   
@@ -28,6 +28,11 @@
     width: 7rem;
     display: flex;
     flex-direction: column;
+    transition:
+    scale 0.2s;
+}
+.competencia:hover{
+    scale: 1.1;
 }
 
 .competencias img{

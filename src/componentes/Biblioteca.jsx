@@ -59,7 +59,7 @@ const Biblioteca = () => {
                 {id:3,
                 nombre:"telefono",
                 logo: logoTelefono,
-                texto: "+598 99 281 322"},
+                texto: "+59899281322"},
                 {id:4,
                 nombre:"mail",
                 logo: logoGmail,

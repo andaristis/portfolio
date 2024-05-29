@@ -13,8 +13,7 @@
     
 }
 .fotoPersonal{
-    
-    max-height: 100%;
+        max-height: 100%;
 }
 span{
     width:5rem;
@@ -25,7 +24,7 @@ span:nth-child(2){
     background-color: white;
 }
 .logoAndaristis{
-    width: 4rem;
+    width: 2rem;
     margin-right: 1rem;
 }
 .textoAboutMe{
@@ -33,7 +32,7 @@ span:nth-child(2){
     flex-direction: column;
     padding: 2rem;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: .8rem;
     justify-content: center;
 }
 .nombre{

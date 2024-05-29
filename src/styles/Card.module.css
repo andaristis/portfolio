@@ -9,6 +9,8 @@
     padding: 1rem;
     align-items: center;
     justify-content: space-between;
+    transition:
+        scale .2s;
     
 }
 .contenedorCard:hover{
