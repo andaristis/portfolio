@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import styles from '../styles/FormContacto.module.css';
+import emailjs from 'emailjs-com';
+import { toastError, toastSuccess } from '../componentes/Notificaciones'
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -13,9 +16,23 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    console.log(formData);
+
+    emailjs.send("service_co632j8","template_neaap9n", formData, 'lnx1kxdWAnMR-vWKU')
+      .then((response) => {
+        console.log('Correo enviado exitosamente', response.status, response.text);
+        toastSuccess(`${formData.name}, su mensaje ha sido enviado. Nos pondremos en contacto a la brevedad posible.`)
+        setFormData({
+          name: '',
+          email: '',
+          message: ''
+        });
+      })
+      .catch((error) => {
+        console.log('Error al enviar el correo', error);
+        toastError(`${formData.name}, su mensaje no ha sido enviado, intente de nuevo más tarde.`)
+      });
   };
+
 console.log(formData);
   return (
     <form className={styles.contactForm} onSubmit={handleSubmit}>

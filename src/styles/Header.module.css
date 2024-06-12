@@ -19,13 +19,17 @@ header button{
     align-items: center;
     border: none;
 }
+.textoButtons:hover{
+    font-size: .88rem;
+    font-style: italic
+}
 .textoButtons {
     display: block;
     text-align: center; 
     text-decoration: none;
     writing-mode: vertical-rl;
-    
-    
+    transition:
+    all .2s;
 }
 #texto-dif-header{
     color: var(--color-negro-azul);

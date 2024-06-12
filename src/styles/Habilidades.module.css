@@ -1,21 +1,39 @@
-.contenedorHabilidades{
+.contenedorCardsHabilidades{
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 3 columnas de tamaño flexible */
     grid-gap: 20px;
     margin: 0 1rem; 
-    grid-auto-rows: 5rem;
+    
+    height: 80%;
+    
 }
 .habilidades{
-  
+    height: 100vh;
     background-color: var(--color-azul-oscuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
+.contenedorHabilidades{
+    height: 70vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .tituloHabilidades{
     color:white;
     text-align: center;
     padding: 1rem 0 ;
+   
 }
-
+.contenedorCompetencias{
+    display: flex;
+    flex-direction: column;
+    
+    height: 30vh;
+    
+}
 .competencias{
     background-color: var(--color-naranja);
     height: 6rem;

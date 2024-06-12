@@ -1,29 +1,25 @@
-
 .logoHabilidad{
     width: 2.5rem;
 }
 .tituloHabilidad{
     display: block;
     text-align: center; 
-    
     font-size: .8rem;
-   
-
 }
 .descripcionHabilidad{
-    font-size: .6rem;
+    font-size: calc(.3rem + .5vw);
     font-weight: 600;
     text-align: center;
-    padding: 0 .2rem;
+    padding: .5rem;
     color: black;
 }
 .cardContainer {
-    perspective: 1000px; /* Añade perspectiva para el 3D */
-   border: 2px solid var(--azul-oscuro);
+    perspective: 1000px;
+    border: 2px solid var(--azul-oscuro);
   }
   
   .card {
-    height: 5.5rem;
+    height: 100%;
     display: flex;
     position: relative;
     align-items: center;
@@ -38,7 +34,7 @@
   }
   
   .cardFace {
-    backface-visibility: hidden; /* Oculta la cara posterior */
+    backface-visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,9 +50,6 @@
     flex-direction: column-reverse;
     gap: .2rem;
     color: var(--azul-oscuro);
-    
-    
-    
   }
   
   .cardBack {

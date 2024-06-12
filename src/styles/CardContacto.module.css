@@ -29,7 +29,7 @@
     opacity: 0%;
     transition: all .2s;
 }
-.logoContacto:hover + .textoContacto{
+.linkContacto:hover + .textoContacto{
     opacity: 100%;
 }
 .contenedorLogosContactos{

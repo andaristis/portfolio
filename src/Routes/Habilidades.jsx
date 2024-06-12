@@ -16,15 +16,17 @@ const Habilidades = ({habilidadesRef}) => {
     console.log("sectionStyle");
   return (
     <section ref={habilidadesRef} className={styles.habilidades} style={sectionStyle}>
-      <h2 className={styles.tituloHabilidades}>HABILIDADES PRINCIPALES</h2>
       <div className={styles.contenedorHabilidades}>
+      <h2 className={styles.tituloHabilidades}>HABILIDADES PRINCIPALES</h2>
+      <div className={styles.contenedorCardsHabilidades}>
         {habilidades.map((habilidad) =>
         <CardHabilidad key={habilidad.id} habilidad={habilidad}/>)
       }
       </div>
-      <div>
-      <h2 className={styles.tituloHabilidades}>COMPETENCIAS</h2>
-      <Competencia competencias={images.logo_competenecias}/>
+      </div>
+      <div className={styles.contenedorCompetencias}>
+        <h2 className={styles.tituloHabilidades}>COMPETENCIAS</h2>
+        <Competencia competencias={images.logo_competenecias}/>
       </div>
     </section>
   )

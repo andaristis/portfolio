@@ -33,7 +33,19 @@
     background-color: transparent;
     border: none;
     font-weight: 700;
+    width: 100%;
+    height: 2rem;
+    transition: all .2s;
 }
-.contactForm input:focus, .contactForm textarea:focus  {
+.contactForm button:hover{
     outline: 2px solid var(--color-naranja);
+    background-color: var(--color-azul-oscuro);
+    color: white;
+
+}
+.contactForm input:focus, .contactForm textarea:focus,.contactForm button:focus {
+    outline: 2px solid var(--color-naranja);
+    background-color: var(--color-azul-oscuro);
+    color: white;
   }
+ 

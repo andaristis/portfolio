@@ -8,10 +8,9 @@
     border-radius: 2rem;
     padding: 1rem;
     align-items: center;
-    justify-content: space-between;
     transition:
         scale .2s;
-    
+    cursor:pointer;
 }
 .contenedorCard:hover{
     scale: 1.05;
@@ -19,7 +18,7 @@
 }
 .tituloCard{
     height: 2rem;
-        margin-bottom:.5rem;
+    margin-bottom:.5rem;
     
 }
 
@@ -28,6 +27,12 @@
     height: auto;
     border: white solid .2rem;
     margin-bottom:1rem;
+}
+.contenedorDescripcionProyecto{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
 }
 .subtituloCard{
     margin-bottom: .5rem;
@@ -45,30 +50,40 @@
     justify-content: center;
     width: 100%;
     display: flex;
-    margin-top: auto;
     height: 1.5rem;
-    padding-bottom: 1rem;
-    align-self: flex-end;
-   
+    flex-wrap: wrap;
 }
 .descripcionCard{
-    font-size: .9rem;
+    font-size: 1rem;
 }
 .habilidadCard{
     height: 100%;
     opacity: 50%;
-    margin: 0 0.5rem
+    margin: 0 0.5rem;
+    height: 1.5rem;
+    
     
 }
 
 @media (max-width: 768px){
     .descripcionCard{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         
     }
     .subtituloCard{
         font-size: 0.9rem;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
+       
     }
+    .contenedorHabilidadesCard{
+        height: 3rem;
+        width: 100%;
+        align-items: center;
+    }
+}
+@media (max-width: 590px){
+    .descripcionCard{
+        font-size: 0.8rem;
+        
+    }
+    
 }
