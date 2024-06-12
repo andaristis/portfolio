@@ -18,6 +18,7 @@ header button{
     justify-content: center;
     align-items: center;
     border: none;
+    cursor:pointer;
 }
 .textoButtons:hover{
     font-size: .88rem;
@@ -30,6 +31,7 @@ header button{
     writing-mode: vertical-rl;
     transition:
     all .2s;
+    
 }
 #texto-dif-header{
     color: var(--color-negro-azul);
