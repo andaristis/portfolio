@@ -32,7 +32,7 @@ span:nth-child(2){
     flex-direction: column;
     padding: 2rem;
     text-align: center;
-    font-size: .8rem;
+    font-size: 1rem;
     justify-content: center;
 }
 .nombre{
@@ -45,4 +45,12 @@ span:nth-child(2){
     display: flex;
     justify-content: center;
     align-items: center; 
+}
+@media (max-width: 768px){
+    .textoAboutMe{
+        padding: 1rem;
+        text-align: center;
+        font-size: .7rem;
+        
+    }
 }

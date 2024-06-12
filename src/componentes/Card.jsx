@@ -18,7 +18,7 @@ const Card = ({proyecto}) => {
           {habilidades && habilidades.length > 0 ? (
             <ul className={styles.contenedorHabilidadesCard}>
               {habilidades.map((habilidad, index) => (
-                <li key={index}>
+                <li className={styles.listadoHabilidadCard} key={index}>
                   <img className={styles.habilidadCard} src={habilidad} alt={`Habilidad ${index}`} />
                 </li>
               ))}

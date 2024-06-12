@@ -1,5 +1,5 @@
 .logoHabilidad{
-    width: 2.5rem;
+    height: 70%;
 }
 .tituloHabilidad{
     display: block;
@@ -18,19 +18,17 @@
     border: 2px solid var(--azul-oscuro);
   }
   
-  .card {
-    height: 100%;
-    display: flex;
-    position: relative;
-    align-items: center;
-    
-    border-radius: 1rem;
-    transform-style: preserve-3d;
-    transition: 
-        transform 0.8s,
-        scale 0.8s;
-        
-    
+.card {
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  
+  border-radius: 1rem;
+  transform-style: preserve-3d;
+  transition: 
+      transform 0.8s,
+      scale 0.8s;
   }
   
   .cardFace {
@@ -53,14 +51,16 @@
   }
   
   .cardBack {
-   
     color: white;
     transform: rotateY(180deg);
-    
-    
-  }
+   }
   
   .cardContainer:hover .card {
     transform: rotateY(180deg);
     scale: 1.1;
   }
+  @media (max-width: 768px){
+    .descripcionHabilidad{
+      font-size: calc(.3rem + .3vw);
+  }
+}

@@ -58,6 +58,13 @@ button:nth-child(5){
 .selected{
     font-weight: 600;
 }
-
+@media (max-width: 768px){
+    .textoButtons{
+        font-size: .7rem;}
+    .textoButtons:hover{
+        font-size: .75rem;
+        font-style: italic
+    }
+}
 
 
