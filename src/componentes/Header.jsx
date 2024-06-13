@@ -1,5 +1,5 @@
 import {useState, React, useEffect} from 'react'
-import logo from '../img/CV.svg'
+
 import styles from '../styles/Header.module.css';
 
 
