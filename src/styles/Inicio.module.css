@@ -1,0 +1,65 @@
+section{
+    
+    height: 100vh;
+    
+    }
+.inicio{
+    background-color: var(--color-negro);
+   
+    display: flex;
+}
+.contnedorTextosInicio{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    justify-content: center;
+}
+#contenedorImagenInicio{
+    width: 40vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content:center;
+    
+}
+.nombre, .descripcion, .subtitulo{
+    color: white;
+    font-weight:normal;
+    text-align: center;
+}
+.subtitulo{
+    font-size: 4rem;
+    font-family: var(--Aleo);
+}
+.descripcion{
+    font-size: 1rem;
+    padding: 0 4rem;
+}
+.logoAndaristis{
+    filter: drop-shadow(0 0 5px white);
+    height: 100px;
+}
+@media (max-width: 1024px)
+{
+.subtitulo{
+    font-size: 3.5rem;
+}
+.descripcion{
+    font-size: 1rem;
+}
+}
+@media (max-width: 768px){
+    .nombre{
+        font-size: 1rem;
+    }
+    
+    .subtitulo{
+        font-size: 2.5rem;
+    }
+    .descripcion{
+        font-size: .8rem;
+    }
+    .logoAndaristis{
+        height: 80px;
+    }
+}

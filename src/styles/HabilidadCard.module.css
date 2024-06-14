@@ -1,0 +1,66 @@
+.logoHabilidad{
+    height: 70%;
+}
+.tituloHabilidad{
+    display: block;
+    text-align: center; 
+    font-size: .8rem;
+}
+.descripcionHabilidad{
+    font-size: calc(.3rem + .5vw);
+    font-weight: 600;
+    text-align: center;
+    padding: .5rem;
+    color: black;
+}
+.cardContainer {
+    perspective: 1000px;
+    border: 2px solid var(--azul-oscuro);
+  }
+  
+.card {
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  
+  border-radius: 1rem;
+  transform-style: preserve-3d;
+  transition: 
+      transform 0.8s,
+      scale 0.8s;
+  }
+  
+  .cardFace {
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-naranja);
+  }
+  
+  .cardFront {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: .2rem;
+    color: var(--azul-oscuro);
+  }
+  
+  .cardBack {
+    color: white;
+    transform: rotateY(180deg);
+   }
+  
+  .cardContainer:hover .card {
+    transform: rotateY(180deg);
+    scale: 1.1;
+  }
+  @media (max-width: 768px){
+    .descripcionHabilidad{
+      font-size: calc(.3rem + .3vw);
+  }
+}

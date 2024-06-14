@@ -1,0 +1,90 @@
+
+.contenedorCard{
+    width: 35%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-azul-oscuro);
+    border-radius: 2rem;
+    padding: 1rem;
+    align-items: center;
+    transition:
+        scale .2s;
+    cursor:pointer;
+}
+.contenedorCard:hover{
+    scale: 1.05;
+    
+}
+.tituloCard{
+    height: 2rem;
+    margin-bottom:.5rem;
+    
+}
+
+.preview{
+    width: 80%;
+    height: auto;
+    border: white solid .2rem;
+    margin-bottom:1rem;
+}
+.contenedorDescripcionProyecto{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+}
+.subtituloCard{
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    
+}
+.descripcionCard, .subtituloCard{
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-bottom: .4rem;
+    
+}
+.contenedorHabilidadesCard{
+    list-style: none;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    height: calc(1rem + .5vh);
+    flex-wrap: wrap;
+    
+}
+.descripcionCard{
+    font-size: calc(.5rem + .6vh);
+    height: auto;
+}
+.habilidadCard{
+    width: 100%;
+    opacity: 50%;
+    margin: 0 1.5vh;
+    height: calc(1rem + .5vh);
+}
+.listadoHabilidadCard{
+    display: flex;
+}
+@media (max-width: 768px){
+    .descripcionCard{
+        font-size: calc(.3rem + .9vh);
+        
+    }
+    .subtituloCard{
+        font-size: 0.9rem;
+       
+    }
+    .contenedorHabilidadesCard{
+        height: calc(2rem + .9vh);
+        width: 100%;
+        align-items: center;
+    }
+}
+@media (max-width: 590px){
+   
+    
+    
+}

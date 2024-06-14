@@ -1,0 +1,7 @@
+@import '../src/styles/variables.css';
+*{
+    font-family: var(--montserrat);
+    margin: 0;
+    padding: 0;
+    
+}

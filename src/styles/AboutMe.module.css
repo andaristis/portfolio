@@ -1,0 +1,56 @@
+.aboutMe{
+    background-color: var(--color-naranja);
+    display: flex;
+    
+}
+.contenedorImgAboutMe{
+    overflow: hidden;
+    width:70%;
+    justify-content: center;
+    align-items: center;
+    display:flex ;
+    background-color: black;
+    
+}
+.fotoPersonal{
+        max-height: 100%;
+}
+span{
+    width:5rem;
+    height: 100vh;
+    background-color: black;
+}
+span:nth-child(2){
+    background-color: white;
+}
+.logoAndaristis{
+    width: 2rem;
+    margin-right: 1rem;
+}
+.textoAboutMe{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    justify-content: center;
+}
+.nombre{
+    color:white;
+    font-weight: 400;
+    text-align: left;
+}
+.tituloAboutMe{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+@media (max-width: 768px){
+    .textoAboutMe{
+        padding: 1rem;
+        text-align: center;
+        font-size: .7rem;
+        
+    }
+}

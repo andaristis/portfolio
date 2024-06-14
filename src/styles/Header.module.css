@@ -1,0 +1,72 @@
+
+header nav{
+    background-color: var(--color-negro);
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 3vw;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header button{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor:pointer;
+}
+.textoButtons:hover{
+    font-size: .88rem;
+    font-style: italic
+}
+.textoButtons {
+    display: block;
+    text-align: center; 
+    text-decoration: none;
+    writing-mode: vertical-rl;
+    transition:
+    all .2s;
+    
+}
+#texto-dif-header{
+    color: var(--color-negro-azul);
+}
+header button:nth-child(1){
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+}
+header button:nth-child(2){
+    background-color: var(--color-negro-azul);
+    color: var(--color-blanco);
+}
+header button:nth-child(3){
+    background-color: var(--color-azul-oscuro);
+    color: var(--color-blanco);
+}
+header button:nth-child(4){
+    background-color: var(--color-naranja);
+    color: var(--color-negro-azul);
+}
+button:nth-child(5){
+    background-color: var(--color-blanco);
+    color: var(--color-negro-azul);
+}
+
+.selected{
+    font-weight: 600;
+}
+@media (max-width: 768px){
+    .textoButtons{
+        font-size: .7rem;}
+    .textoButtons:hover{
+        font-size: .75rem;
+        font-style: italic
+    }
+}
+
+

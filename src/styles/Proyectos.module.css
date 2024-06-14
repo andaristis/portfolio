@@ -1,0 +1,9 @@
+
+.contenedorProyectos{
+    background-color: var(--color-negro-azul);
+    width: calc(100vw - 3vw);
+    height: 100vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
