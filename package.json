@@ -4,11 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://andaristis.github.io/portfolio/",
-   "scripts": {
+  "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+    "postinstall": "chmod +x node_modules/.bin/vite"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
