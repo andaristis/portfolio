@@ -6,4 +6,12 @@
     display: flex;
     justify-content:space-around;
     align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 768px){
+    .contenedorProyectos{
+        flex-direction: column;
+    }
+
 }

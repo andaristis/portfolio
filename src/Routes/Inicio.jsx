@@ -13,8 +13,8 @@ const Inicio = ({ inicioRef }) => {
   return (
     <section ref={inicioRef} className={styles.inicio} style={sectionStyle}>
      
-      <div id={styles.contenedorImagenInicio}>
-        <img src={images.fondo_inicio} alt="" />
+      <div className={styles.contenedorImagenInicio}>
+        <img  src={images.fondo_inicio} alt="" />
       </div>
       <div className={styles.contnedorTextosInicio}>
         <img className={styles.logoAndaristis} src={images.logo_andaristis} alt="" />

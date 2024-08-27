@@ -11,17 +11,22 @@ section{
 .contnedorTextosInicio{
     display: flex;
     flex-direction: column;
-    width: 60vw;
+    width: 50%;
     justify-content: center;
 }
-#contenedorImagenInicio{
-    width: 40vw;
+.contenedorImagenInicio{
+    width: 50%;
     height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content:center;
     
 }
+.contenedorImagenInicio img{
+    height: 100vh;
+    width: auto;
+}
+
 .nombre, .descripcion, .subtitulo{
     color: white;
     font-weight:normal;
@@ -33,7 +38,7 @@ section{
 }
 .descripcion{
     font-size: 1rem;
-    padding: 0 4rem;
+    padding: 0 calc(2rem + 1vh);
 }
 .logoAndaristis{
     filter: drop-shadow(0 0 5px white);
@@ -54,7 +59,7 @@ section{
     }
     
     .subtitulo{
-        font-size: 2.5rem;
+        font-size: calc(1.7rem + 1vw);
     }
     .descripcion{
         font-size: .8rem;
@@ -62,4 +67,27 @@ section{
     .logoAndaristis{
         height: 80px;
     }
+}
+@media (max-width: 425px){
+    .contnedorTextosInicio{
+        position: relative;
+        width: 100%;
+        z-index: 0;
+        background-color: #000000eb;
+        
+    }
+    .contenedorImagenInicio{
+        position: absolute;
+        display: block;
+        z-index: 0;
+        justify-content:left;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .contenedorImagenInicio img{
+        height: 100%;
+        width: auto;
+    }
+    
 }

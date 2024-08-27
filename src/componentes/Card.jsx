@@ -10,11 +10,15 @@ const Card = ({proyecto}) => {
   return (
     
       <div className={styles.contenedorCard} onClick={handleCardClick}>
-        <img className={styles.tituloCard} src={logo_titulo} alt={nombre}/>
-        <img className={styles.preview} src={preview} alt={preview}/>
+          <div className={styles.contenedorPreview}>
+            <img className={styles.preview} src={preview} alt={preview}/>
+          </div>
         <div className={styles.contenedorDescripcionProyecto}>
-          <h2 className={styles.subtituloCard}>{subtitulo}</h2>
-          <p className={styles.descripcionCard}>{descripcion}</p>
+          <img className={styles.tituloCard} src={logo_titulo} alt={nombre}/>
+          <div className={styles.textosProyecto}>
+            <h2 className={styles.subtituloCard}>{subtitulo}</h2>
+            <p className={styles.descripcionCard}>{descripcion}</p>
+          </div>
           {habilidades && habilidades.length > 0 ? (
             <ul className={styles.contenedorHabilidadesCard}>
               {habilidades.map((habilidad, index) => (

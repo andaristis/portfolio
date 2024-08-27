@@ -21,3 +21,13 @@
     border-left: 20px solid var(--color-negro-azul);
     column-gap: 1rem;
 }
+@media (max-width: 768px){
+    .contenedorFormContactos{
+        width: 70%;
+     
+    }
+    .contenedorLogosContactos{
+        width: 30%;
+    }
+
+}

@@ -16,7 +16,7 @@ const AboutMe = ({aboutMeRef}) => {
         </div>
         <span className="separador"></span>
         <span className="separador"></span>
-        <div className={styles.textoAboutMe}>
+        <div className={styles.contenedorTextoAboutMe}>
             <div className={styles.tituloAboutMe}>
                     <img className={styles.logoAndaristis} src={images.logo_andaristis} alt="" />
                 <h2 className={styles.nombre}>ANDRES<br/>ARISTIMUÑO</h2>

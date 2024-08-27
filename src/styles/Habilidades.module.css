@@ -59,8 +59,20 @@
 }
 
 @media (max-width: 768px){
+    .contenedorCardsHabilidades{
+        height: 90%;
+        
+    }
     .tituloHabilidades{
        font-size: 1rem;
+    }
+    .contenedorHabilidades{
+        height: 70vh;
+        justify-content: space-evenly;
+    }
+    .contenedorCompetencias{
+        height: 30vh;
+        justify-content: space-evenly;
     }
     .competencias{
         height: 5rem;
@@ -69,5 +81,16 @@
     }
     .competencias h4{
         font-size: .7rem;
+    }
+    .competencias{
+        height: 60%;
+    }
+    .tituloHabilidades{
+      padding: .5rem 0 ;
+    }
+}
+@media (max-width: 590px){
+    .competencias h4{
+        display: none;;
     }
 }
